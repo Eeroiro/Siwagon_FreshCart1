@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FreshCart</title>
+</head>
+<body>
+
+    <h1>FreshCart</h1>
+    <p>Your online store for fresh products and daily needs!</p>
+
+    <form>
+        <input type="text" placeholder="Search products">
+        <button type="submit">Search</button>
+    </form>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#products">Products</a> |
+        <a href="#cart">Cart</a> |
+        <a href="#checkout">Checkout</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <h2 id="home">Welcome to FreshCart!</h2>
+    <p>Shop for food, household items, and clothing in one place.</p>
+    <p><a href="#products">Shop Now</a></p>
+
+    <hr>
+
+    <h2 id="products">Our Products</h2>
+
+    <h3>Food and Grocery</h3>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>
+                <h3>Apples</h3>
+                <img src="apple.jpg"
+                alt="Fresh apples" width="150" height="150">
+                <p>Fresh apples for a healthy snack.</p>
+                <p>Price: ₱30.00</p>
+                <button type="button">Add to Cart</button>
+            </td>
+
+            <td>
+                <h3>Bread</h3>
+                <img src="bread.jpg"
+                alt="Fresh bread" width="150" height="150">
+                <p>Bread for breakfast.</p>
+                <p>Price: ₱60.00</p>
+                <button type="button">Add to Cart</button>
+            </td>
+
+            <td>
+                <h3>Eggs</h3>
+                <img src="eggs.jpg"
+                alt="Fresh eggs" width="150" height="150">
+                <p>Eggs for cooking.</p>
+                <p>Price: ₱120.00</p>
+                <button type="button">Add to Cart</button>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Household Items</h3>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>
+                <h3>Shampoo</h3>
+                <img src="shampoo.jpg"
+                alt="Shampoo product" width="150" height="150">
+                <p>Shampoo for clean hair.</p>
+                <p>Price: ₱95.00</p>
+                <button type="button">Add to Cart</button>
+            </td>
+
+            <td>
+                <h3>Laundry Soap</h3>
+                <img src="laudry soap.jpg"
+                alt="Laundry cleaning product" width="150" height="150">
+                <p>Soap for washing clothes.</p>
+                <p>Price: ₱230.00</p>
+                <button type="button">Add to Cart</button>
+            </td>
+
+            <td>
+                <h3>Tissue</h3>
+                <img src="tissue.jpg"
+                alt="Tissue product" width="150" height="150">
+                <p>Tissue for home use.</p>
+                <p>Price: ₱25.00</p>
+                <button type="button">Add to Cart</button>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Clothing</h3>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>
+                <h3>T-Shirt</h3>
+                <img src="tshirt.jpg"
+                alt="T-shirt" width="150" height="150">
+                <p>Comfortable shirt for daily use.</p>
+                <p>Price: ₱199.00</p>
+                <label>Size:
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </label>
+                <p><button type="button">Add to Cart</button></p>
+            </td>
+
+            <td>
+                <h3>Hoodie</h3>
+                <img src="hoodie.jpg"
+                alt="Hoodie" width="150" height="150">
+                <p>Warm hoodie for cold weather.</p>
+                <p>Price: ₱450.00</p>
+                <label>Size:
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </label>
+                <p><button type="button">Add to Cart</button></p>
+            </td>
+
+            <td>
+                <h3>Socks</h3>
+                <img src="socks.jpg"
+                alt="Clothing product" width="150" height="150">
+                <p>Socks for everyday use.</p>
+                <p>Price: ₱60.00</p>
+                <button type="button">Add to Cart</button>
+            </td>
+        </tr>
+    </table>
+
+    <p><small>If a picture does not appear, check your internet connection or replace its image link.</small></p>
+
+    <hr>
+
+    <h2 id="cart">Your Cart</h2>
+    <table border="1" cellpadding="8">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apples</td>
+                <td>₱80.00</td>
+                <td><input type="number" min="1" max="10" value="1"></td>
+                <td>₱80.00</td>
+            </tr>
+            <tr>
+                <td>Bread</td>
+                <td>₱60.00</td>
+                <td><input type="number" min="1" max="10" value="1"></td>
+                <td>₱60.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Grand Total</strong></td>
+                <td><strong>₱140.00</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2 id="checkout">Checkout</h2>
+
+    <form>
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </p>
+
+            <p>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </p>
+
+            <p>
+                <label for="city">City:</label>
+                <input list="cities" id="city" name="city" required>
+                <datalist id="cities">
+                    <option value="Baguio City">
+                    <option value="La Trinidad">
+                    <option value="Tabuk City">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="deliverydate">Delivery Date:</label>
+                <input type="date" id="deliverydate" name="deliverydate" required>
+            </p>
+
+            <p>
+                <label for="delivery">Delivery Option:</label>
+                <select id="delivery" name="delivery">
+                    <option>Standard Delivery</option>
+                    <option>Express Delivery</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Payment and Extras</legend>
+
+            <p>Payment Method:</p>
+            <input type="radio" id="cash" name="payment" value="Cash" checked>
+            <label for="cash">Cash on Delivery</label><br>
+
+            <input type="radio" id="gcash" name="payment" value="GCash">
+            <label for="gcash">GCash</label><br>
+
+            <input type="radio" id="bank" name="payment" value="Bank">
+            <label for="bank">Bank Transfer</label>
+
+            <p>Extra Items:</p>
+            <input type="checkbox" id="bag" name="extras" value="Gift Bag">
+            <label for="bag">Gift Bag</label><br>
+
+            <input type="checkbox" id="wrap" name="extras" value="Gift Wrap">
+            <label for="wrap">Gift Wrap</label>
+
+            <p>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions.</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Place Order</button>
+            <button type="reset">Reset Form</button>
+        </p>
+    </form>
+
+    <hr>
+
+    <h2>Our Location</h2>
+    <p>Visit us in Baguio City.</p>
+
+    <iframe
+        src="https://www.google.com/maps?q=Baguio%20City&output=embed"
+        width="400" height="300" title="Map of Baguio City">
+    </iframe>
+
+    <p>
+        <a href="https://www.google.com/maps/search/Baguio+City"
+        target="_blank">View Larger Map</a>
+    </p>
+
+    <hr>
+
+    <h2 id="contact">Contact Us</h2>
+    <p>Address: Baguio City, Philippines</p>
+    <p>Phone: <a href="tel:+639123456789">0912 345 6789</a></p>
+    <p>Email: <a href="mailto:freshcart@example.com">freshcart@example.com</a></p>
+
+    <hr>
+
+    <h2>Customer Review</h2>
+    <form>
+        <p>
+            <label for="rating">Rate our store (1 to 5):</label>
+            <input type="range" id="rating" name="rating" min="1" max="5" value="5">
+        </p>
+
+        <p>
+            <label for="review">Your Review:</label><br>
+            <textarea id="review" name="review" rows="4" cols="40"
+            placeholder="Write your review here"></textarea>
+        </p>
+
+        <p>
+            <label for="receipt">Upload a File:</label>
+            <input type="file" id="receipt" name="receipt">
+        </p>
+
+        <button type="submit">Submit Review</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <hr>
+
+    <h2>Useful Links</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Your Cart</a></li>
+        <li><a href="#checkout">Checkout</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <details>
+        <summary>Terms and Conditions</summary>
+        <p>Please check your order details before submitting your purchase.</p>
+        <p>Product prices and availability may change.</p>
+    </details>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 FreshCart. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
